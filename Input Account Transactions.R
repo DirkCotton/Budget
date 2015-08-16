@@ -30,6 +30,15 @@ y <- trans[trans$Account.Name %in% include.accts,]
 
 cc <- trans[trans$Category == "Credit Card Payment",]
 trans <- trans[trans$Category != "Credit Card Payment",]
+#
+# Remove credits to a separate vector
+#
+credits <- trans[trans$Transaction.Type == "credit",]
+trans <- trans[trans$Transaction.Type != "Credit Card Payment",]
+
+# Remove any transactions less than $1
+
+trans <- trans[trans$Amount > 1,]
 
 
 
