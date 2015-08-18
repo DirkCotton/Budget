@@ -64,5 +64,35 @@ trans <- trans[trans$Amount > 1,]
 l6 <- length(trans[,1])
 cat("\nRemoved from transactions:  ",l5-l6," transactions less than $1 leaving ",l6," transactions",sep="")
 
+# Total spend this period
+
+cat("\n\nTotal amount spent during selected time period is ",sum(trans$Amount),sep="")
+
+#
+# How much spent on Eric?  Schwab?
 
 
+# How much spent on Alex?
+
+# compare all spending by categiory to budget
+
+# input cumulative monthly budget
+### all numbers should be without commas, $ and should have 0 instead of blank
+
+budget <- read.csv("2015 Cum Monthly Budget.csv",stringsAsFactors = FALSE)
+budget
+colsum <- aggregate(trans$Amount ~ trans$Category, data = trans, FUN = sum)
+
+names(colsum) <- c("Category","Monthly Budget YTD")
+
+#  FIX MONTH IN STMT BELOW
+#build monthly budget data frame
+budgetmo <- data.frame(budget[,1],budget[,8])
+names(budgetmo) <- c("Category","Amount")
+
+# build dataframe of expenses, YTD budget and delta
+spndvbudget <- merge(colsum,budgetmo,all=TRUE)
+spndvbudget[,2][is.na(spndvbudget[,2])] <- 0 # convert NA to zero
+spndvbudget[,3][is.na(spndvbudget[,3])] <- 0 # convert NA to zero
+
+write.csv(spndvbudget,"spndvbudget.csv")
