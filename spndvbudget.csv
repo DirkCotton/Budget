@@ -21,7 +21,7 @@
 "20","Clothing",2069.77,2917
 "21","Coffee Shops",443.83,0
 "22","Dentist",175,1167
-"23","Doctor",10955.53,7000
+"23","Doctor",13955.53,7000
 "24","Education",534.37,0
 "25","ELECTRIC",2331.41,0
 "26","Electronics & Software",1106.23,1458
@@ -79,28 +79,26 @@
 "78","Service & Parts",2008.1,583
 "79","Service Fee",50,0
 "80","Shipping",111.49,128
-"81","Shopping",1749.97,3792
+"81","Shopping",1894.72,3792
 "82","Sporting Goods",74.27,0
 "83","Sports",2982.3,0
 "84","State Tax",0,4083
-"85","Taxes",11862,0
-"86","Transfer",13051.59,0
-"87","Travel",77.69,0
-"88","Tuition",10,0
-"89","Uncategorized",9137.77,0
-"90","Utilities",794.36,0
-"91","Vacation",527.67,0
-"92","Water",1006.6,1050
-"93","Auto Insurance",0,0
-"94","Cable TV/Internet",0,1085
-"95","Electricity",0,2078
-"96","Household:Exterminator",0,233
-"97","Insurance: HO, Car, Umbrella",0,471
-"98","JDC Planning",0,0
-"99","Leisure",0,175
-"100","Natural Gas Eric",0,0
-"101","Tax",0,0
-"102","Tax Preparation",0,391
-"103","Tax(Car Property)",0,0
-"104","Tax(Property) Home",0,13839
-"105","Umbrella Liability",0,294
+"85","Tax(Property) Home",11862,13839
+"86","Travel",77.69,0
+"87","Tuition",10,0
+"88","Uncategorized",9137.77,0
+"89","Utilities",794.36,0
+"90","Vacation",527.67,0
+"91","Water",1006.6,1050
+"92","Auto Insurance",0,0
+"93","Cable TV/Internet",0,1085
+"94","Electricity",0,2078
+"95","Household:Exterminator",0,233
+"96","Insurance: HO, Car, Umbrella",0,471
+"97","JDC Planning",0,0
+"98","Leisure",0,175
+"99","Natural Gas Eric",0,0
+"100","Tax",0,0
+"101","Tax Preparation",0,391
+"102","Tax(Car Property)",0,0
+"103","Umbrella Liability",0,294
